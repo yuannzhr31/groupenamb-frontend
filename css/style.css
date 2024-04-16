@@ -520,6 +520,26 @@ button:hover {
 
 /*** Carousel Hero Header End ***/
 
+/*** Informasi Start ***/
+#header-carousel-info {
+  max-width: 800px; /* Lebar maksimal carousel */
+  margin: 0 auto; /* Memposisikan carousel di tengah */
+}
+
+.info-carousel-item img {
+  max-height: 300px; /* Tinggi maksimal gambar */
+  object-fit: cover; /* Mengatur gambar agar terlihat proporsional */
+  border-radius: 15px; /* Mengatur ujung gambar menjadi rounded */
+}
+
+.carousel-caption a {
+  color: white; /* Warna teks putih */
+  font-weight: bold; /* Teks tebal (bold) */
+  font-size: 50px; /* Ukuran font 24px */
+}
+
+/*** Informasi End ***/
+
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
   background: linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)), url(../img/breadcrumb-bg.jpg);
@@ -628,120 +648,45 @@ button:hover {
 /*** Rekomendasi End ***/
 
 /* Kategori Start */
-
-.category .category-item .category-img {
+.category .category-item {
   position: relative;
   overflow: hidden;
-  transition: 0.5s;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  z-index: 1;
 }
 
-.category .category-item .category-img .category-info {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.category .category-item .category-img .category-info small,
-.category .category-item .category-img .category-info small i {
-  color: var(--bs-white);
-  transition: 0.5s;
-}
-
-.category .category-item .category-img::after {
+.category .category-item .category-link {
   position: absolute;
-  content: "";
-  width: 0;
-  height: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 0px solid;
-  border-radius: 10px !important;
-  visibility: hidden;
-  transition: 0.7s;
-  z-index: 3;
-}
-
-.category .category-item .category-img:hover.category-img::after {
-  width: 100%;
-  height: 100%;
-  border: 300px solid;
-  border-color: rgba(19, 53, 123, 0.6) rgba(19, 53, 123, 0.6) rgba(19, 53, 123, 0.6) rgba(19, 53, 123, 0.6);
-  visibility: visible;
-}
-
-.category .category-item .category-img small,
-.category .category-item .category-img small i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
   transition: 0.5s;
 }
 
-.category .category-item .category-img:hover small,
-.category .category-item .category-img:hover small i {
-  color: var(--bs-white) !important;
+.category .category-item .category-link:hover {
+  background: rgba(0, 0, 0, 0.6);
 }
 
-.category .category-item .category-img img {
-  transition: 0.5s;
-}
-
-.category .category-item .category-img:hover img {
-  transform: scale(1.3);
-}
-
-.category .category-item .category-img .category-price {
-  position: absolute;
-  width: 100px;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: inline-block;
-  background: var(--bs-primary);
+.category .category-item .category-link a {
   color: var(--bs-white);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  z-index: 5;
-}
-
-.category .category-carousel {
-  position: relative;
-}
-
-.category .category-carousel .owl-nav .owl-prev {
-  position: absolute;
-  top: -50px;
-  left: 0;
-  padding: 5px 30px;
-  border: 1px solid var(--bs-primary);
-  border-radius: 30px;
   transition: 0.5s;
 }
 
-.category .category-carousel .owl-nav .owl-next {
-  position: absolute;
-  top: -50px;
-  right: 0;
-  padding: 5px 30px;
-  border: 1px solid var(--bs-primary);
-  border-radius: 30px;
+.category .category-item img {
   transition: 0.5s;
 }
 
-.category .category-carousel .owl-nav .owl-prev i,
-.category .category-carousel .owl-nav .owl-next i {
-  color: var(--bs-primary);
-  font-size: 17px;
-  transition: 0.5s;
+.category .category-item:hover img {
+  transform: scale(1.2);
 }
 
-.category .category-carousel .owl-nav .owl-prev:hover,
-.category .category-carousel .owl-nav .owl-next:hover {
-  background: var(--bs-primary);
-}
-
-.category .category-carousel .owl-nav .owl-prev:hover i,
-.category .category-carousel .owl-nav .owl-next:hover i {
-  color: var(--bs-white);
+.category .category-item .category-link:hover a:hover {
+  color: #ffab07;
 }
 
 /* Kategori End */
