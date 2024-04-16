@@ -147,6 +147,8 @@
     });
   });
 
+  // Kategori
+
   // testimonial carousel
   $(".testimonial-carousel").owlCarousel({
     autoplay: true,
