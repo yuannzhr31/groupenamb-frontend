@@ -63,6 +63,7 @@
   justify-content: center;
   font-weight: normal;
   border-radius: 50%;
+  background-color: #ffc700;
 }
 
 .btn.btn-primary {
@@ -552,25 +553,113 @@ button:hover {
 
 /*** Carousel Hero Header End ***/
 
-/*** Informasi Start ***/
-#header-carousel-info {
-  max-width: 800px; /* Lebar maksimal carousel */
-  margin: 0 auto; /* Memposisikan carousel di tengah */
+/*** Kedai Start ***/
+/* Styles untuk love icon dan gambar */
+.kedai-img {
+  position: relative;
+  overflow: hidden;
 }
 
-.info-carousel-item img {
-  max-height: 300px; /* Tinggi maksimal gambar */
-  object-fit: cover; /* Mengatur gambar agar terlihat proporsional */
-  border-radius: 15px; /* Mengatur ujung gambar menjadi rounded */
+.heart-icon-container {
+  position: absolute;
+  top: 10px; /* Sesuaikan posisi vertikal ikon love */
+  right: 10px; /* Sesuaikan posisi horizontal ikon love */
+  z-index: 1; /* Pastikan ikon love berada di atas gambar */
 }
 
-.carousel-caption a {
-  color: white; /* Warna teks putih */
-  font-weight: bold; /* Teks tebal (bold) */
-  font-size: 50px; /* Ukuran font 24px */
+.heart-icon {
+  color: red; /* Warna awal ikon love */
+  cursor: pointer; /* Ubah kursor menjadi pointer saat dihover */
+  font-size: 30px; /* Sesuaikan ukuran ikon love */
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; /* Tambahkan stroke berwarna putih */
 }
 
-/*** Informasi End ***/
+.heart-icon:hover {
+  color: white; /* Ubah warna ikon saat dihover */
+}
+
+/*** Kedai End ***/
+
+/*** Taman Start ***/
+/* Styles untuk love icon dan gambar */
+.taman-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.heart-icon-container {
+  position: absolute;
+  top: 10px; /* Sesuaikan posisi vertikal ikon love */
+  right: 10px; /* Sesuaikan posisi horizontal ikon love */
+  z-index: 1; /* Pastikan ikon love berada di atas gambar */
+}
+
+.heart-icon {
+  color: red; /* Warna awal ikon love */
+  cursor: pointer; /* Ubah kursor menjadi pointer saat dihover */
+  font-size: 30px; /* Sesuaikan ukuran ikon love */
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; /* Tambahkan stroke berwarna putih */
+}
+
+.heart-icon:hover {
+  color: white; /* Ubah warna ikon saat dihover */
+}
+
+/*** Taman End ***/
+
+/*** Wahana Start ***/
+/* Styles untuk love icon dan gambar */
+.wahana-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.heart-icon-container {
+  position: absolute;
+  top: 10px; /* Sesuaikan posisi vertikal ikon love */
+  right: 10px; /* Sesuaikan posisi horizontal ikon love */
+  z-index: 1; /* Pastikan ikon love berada di atas gambar */
+}
+
+.heart-icon {
+  color: red; /* Warna awal ikon love */
+  cursor: pointer; /* Ubah kursor menjadi pointer saat dihover */
+  font-size: 30px; /* Sesuaikan ukuran ikon love */
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; /* Tambahkan stroke berwarna putih */
+}
+
+.heart-icon:hover {
+  color: white; /* Ubah warna ikon saat dihover */
+}
+
+/*** Wahana End ***/
+
+/*** Museum Start ***/
+/* Styles untuk love icon dan gambar */
+.museum-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.heart-icon-container {
+  position: absolute;
+  top: 10px; /* Sesuaikan posisi vertikal ikon love */
+  right: 10px; /* Sesuaikan posisi horizontal ikon love */
+  z-index: 1; /* Pastikan ikon love berada di atas gambar */
+}
+
+.heart-icon {
+  color: red; /* Warna awal ikon love */
+  cursor: pointer; /* Ubah kursor menjadi pointer saat dihover */
+  font-size: 30px; /* Sesuaikan ukuran ikon love */
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; /* Tambahkan stroke berwarna putih */
+}
+
+.heart-icon:hover {
+  color: white; /* Ubah warna ikon saat dihover */
+}
+
+/*** Museum End ***/
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
@@ -1326,31 +1415,48 @@ button:hover {
 }
 /*** Blog End ***/
 
-/*** Testimonial Start ***/
-.testimonial .testimonial-carousel {
+/*** Informasi Start ***/
+/* Carousel Informasi */
+.info .info-carousel .info-item .info-img {
   position: relative;
-}
-
-.testimonial .testimonial-carousel .testimonial-item .testimonial-img {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 300px; /* Sesuaikan tinggi gambar dengan kebutuhan Anda */
+  overflow: hidden;
   border: 3px solid var(--bs-primary);
-  border-style: dotted;
-  border-radius: 50%;
+  border-style: none;
+  border-radius: 10px;
 }
 
-.testimonial .testimonial-carousel .owl-dots {
+.info-item .info-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.info .owl-carousel .owl-stage-outer {
+  overflow: visible !important;
+}
+
+.info .owl-carousel .owl-item {
+  display: flex;
+  justify-content: center;
+}
+
+.info .owl-carousel .owl-item.active.center .info-img img {
+  transform: scale(1.2); /* Efek zoom saat gambar menjadi fokus */
+}
+
+/* Dot navigasi */
+.info .owl-dots {
   margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
-.testimonial .testimonial-carousel .owl-dot {
+.info .owl-dots .owl-dot {
   position: relative;
   display: inline-block;
   margin: 0 5px;
@@ -1358,83 +1464,51 @@ button:hover {
   height: 15px;
   background: var(--bs-light);
   border: 1px solid var(--bs-primary);
-  border-radius: 10px;
+  border-radius: 50%;
   transition: 0.5s;
 }
 
-.testimonial .testimonial-carousel .owl-dot.active {
-  width: 40px;
+.info .owl-dots .owl-dot.active {
+  width: 25px; /* Lebar dot aktif */
   background: var(--bs-primary);
 }
 
-.testimonial .testimonial-carousel .owl-nav .owl-prev {
+/* Overlay teks */
+.info .info-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.info .info-item .category-link {
   position: absolute;
-  top: -55px;
-  left: 0;
-  padding: 5px 30px;
-  border: 1px solid var(--bs-primary);
-  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
   transition: 0.5s;
 }
 
-.testimonial .testimonial-carousel .owl-nav .owl-next {
-  position: absolute;
-  top: -55px;
-  right: 0;
-  padding: 5px 30px;
-  border: 1px solid var(--bs-primary);
-  border-radius: 30px;
-  transition: 0.5s;
+.info .info-item .category-link:hover {
+  background: rgba(0, 0, 0, 0.6);
 }
 
-.testimonial .testimonial-carousel .owl-nav .owl-prev i,
-.testimonial .testimonial-carousel .owl-nav .owl-next i {
-  color: var(--bs-primary);
-  font-size: 17px;
-  transition: 0.5s;
-}
-
-.testimonial .testimonial-carousel .owl-nav .owl-prev:hover,
-.testimonial .testimonial-carousel .owl-nav .owl-next:hover {
-  background: var(--bs-primary);
-}
-
-.testimonial .testimonial-carousel .owl-nav .owl-prev:hover i,
-.testimonial .testimonial-carousel .owl-nav .owl-next:hover i {
-  color: var(--bs-white);
-}
-
-.testimonial .testimonial-carousel .owl-item.center .testimonial-item .testimonial-comment {
-  background: var(--bs-primary) !important;
+.info .info-item .category-link a {
   color: var(--bs-white);
   transition: 0.5s;
 }
 
-.testimonial .testimonial-carousel .owl-item.center .testimonial-item .testimonial-img {
-  border: 3px solid var(--bs-white);
-  border-style: dotted;
+.info .info-item img {
   transition: 0.5s;
 }
-/*** Testimonial End ***/
 
-/*** Contact Start ***/
-.contact .container form .btn.btn-primary {
-  box-shadow: inset 0 0 0 0 var(--bs-primary);
-}
-
-.contact .container form .btn.btn-primary:hover {
-  box-shadow: inset 1000px 0 0 0 var(--bs-light) !important;
-  color: var(--bs-primary) !important;
-}
-/*** Contact End ***/
-
-/*** Subscribe Start ***/
-.subscribe {
-  background: linear-gradient(rgba(19, 53, 123, 0.6), rgba(19, 53, 123, 0.6)), url(../img/subscribe-img.jpg);
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.info .info-item:hover img {
+  transform: scale(1.2);
 }
 
 .subscribe .subscribe-title {
@@ -1465,11 +1539,12 @@ button:hover {
   margin-left: -50px;
   border: 1px solid var(--bs-white) !important;
 }
-/*** Subscribe End ***/
+
+/*** Informasi End ***/
 
 /*** Footer Start ***/
 .footer {
-  background: var(--bs-dark);
+  background-color: #ffab07;
 }
 .footer .footer-item a {
   line-height: 30px;
@@ -1482,11 +1557,38 @@ button:hover {
   color: var(--bs-primary);
 }
 
+/* Mengubah warna teks dan ikon menjadi hitam */
+.footer h4,
+.footer p,
+.footer .social-icon {
+  color: black !important;
+}
+
+/* Memberi ukuran dan tebal pada teks "Rehatin" di footer */
+.footer h4 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* Memberi ukuran dan gaya pada ikon di footer */
+.footer .social-icon {
+  font-size: 36px; /* ukuran ikon */
+  padding: 10px; /* jarak dalam ikon */
+  margin: 0 10px; /* jarak antar ikon */
+  color: black; /* warna ikon */
+}
+
+/* Efek hover pada ikon */
+.footer .social-icon:hover {
+  transform: scale(1.2); /* memperbesar ikon saat dihover */
+}
+
 /*** Footer End ***/
 
 /*** copyright Start ***/
 .copyright {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  background: var(--bs-dark) !important;
+  background: #ffc700 !important;
 }
+
 /*** copyright end ***/
