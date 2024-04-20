@@ -101,7 +101,7 @@
 }
 
 .section-title::before {
-  content: '';
+  content: "";
   width: 50px;
   position: absolute;
   top: 50%;
@@ -112,7 +112,7 @@
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   width: 50px;
   position: absolute;
   top: 50%;
@@ -124,7 +124,7 @@
 
 /*** Navbar ***/
 .navbar-light .navbar-nav .nav-link {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   position: relative;
   padding: 35px 15px;
   color: var(--bs-white) !important;
@@ -168,8 +168,8 @@
 
 .navbar .dropdown-toggle::after {
   border: none;
-  content: '\f107';
-  font-family: 'Font Awesome 5 Free';
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   vertical-align: middle;
   margin-left: 8px;
@@ -256,7 +256,7 @@
 
   .navbar-light .navbar-nav .nav-link::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 100%;
     height: 0;
     bottom: -1px;
@@ -387,12 +387,12 @@
 }
 
 .search:focus-within {
-  box-shadodw: 0 0 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
 }
 
 .search-input {
   font-size: 16px;
-  font-family: 'lexend', sans-serif;
+  font-family: "lexend", sans-serif;
   color: #333333;
   margin-left: var(--padding);
   outline: none;
@@ -406,14 +406,14 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
-input[type='text'] {
+input[type="text"] {
   border: none;
   background-color: transparent;
   color: #333333;
   outline: none;
   padding: 10px;
   width: calc(100% - 100px); /* Mengurangi lebar input agar kotak stroke lebih panjang */
-  font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+  font-family: "Poppins", sans-serif; /* Menggunakan font Poppins */
 }
 
 .telusuri-btn {
@@ -423,7 +423,7 @@ input[type='text'] {
   border-radius: 30px;
   padding: 8px 20px; /* Sesuaikan padding sesuai kebutuhan */
   cursor: pointer;
-  font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+  font-family: "Poppins", sans-serif; /* Menggunakan font Poppins */
   font-weight: bold; /* Tulisan tebal */
 }
 
@@ -481,7 +481,7 @@ h2 {
 }
 
 /* Gaya tambahan untuk tombol submit */
-button[type='submit'] {
+button[type="submit"] {
   display: block; /* Agar tombol "Masuk" menjadi blok (full width) */
   margin: 15px auto; /* Jarak antara tombol "Masuk" dengan elemen lain */
   width: calc(100% - 30px); /* Sesuaikan lebar tombol dengan margin */
@@ -505,8 +505,8 @@ button[type='submit'] {
   margin-top: 5px; /* Ubah margin-top sesuai kebutuhan */
 }
 
-input[type='email'],
-input[type='password'] {
+input[type="email"],
+input[type="password"] {
   width: calc(100% - 12px); /* Sesuaikan lebar input dengan padding */
   padding: 10px;
   border: none; /* Hapus border pada input agar tampak bersih */
@@ -685,7 +685,7 @@ button:hover {
 }
 
 .about .container .section-about-title::before {
-  content: '';
+  content: "";
   width: 50px;
   position: absolute;
   top: 50%;
@@ -718,7 +718,7 @@ button:hover {
   border-top-left-radius: 10px;
 }
 .rekomendasi .rekomendasi-item .rekomendasi-img .rekomendasi-img-efects::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 0;
   position: absolute;
@@ -738,7 +738,7 @@ button:hover {
   transition: 0.5s;
 }
 .rekomendasi .rekomendasi-item .rekomendasi-title::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 0;
   position: absolute;
@@ -835,7 +835,7 @@ button:hover {
   border-top-left-radius: 10px;
 }
 .guide .guide-item .guide-img .guide-img-efects::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 0;
   position: absolute;
@@ -855,7 +855,7 @@ button:hover {
   transition: 0.5s;
 }
 .guide .guide-item .guide-title::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 0;
   position: absolute;
@@ -974,7 +974,7 @@ button:hover {
 
 .packages .packages-item .packages-img::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   top: 50%;
@@ -1327,7 +1327,7 @@ button:hover {
 }
 
 .booking .container .section-booking-title::before {
-  content: '';
+  content: "";
   width: 50px;
   position: absolute;
   top: 50%;
@@ -1519,7 +1519,7 @@ button:hover {
 }
 
 .subscribe .subscribe-title::before {
-  content: '';
+  content: "";
   width: 50px;
   position: absolute;
   top: 50%;
@@ -1530,7 +1530,7 @@ button:hover {
 }
 
 .subscribe .subscribe-title::after {
-  content: '';
+  content: "";
   width: 50px;
   position: absolute;
   top: 50%;
