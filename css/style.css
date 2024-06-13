@@ -578,6 +578,78 @@ button:hover {
   color: white; /* Ubah warna ikon saat dihover */
 }
 
+/* Add spacing between navbar and search bar */
+.kedai.navbar {
+  margin-bottom: 100px; /* Adjust as needed for more space */
+}
+
+/* Shared styles */
+.kedai .dropdown-toggle,
+.kedai-dropdown .dropdown-toggle {
+    color: #FFF !important;
+    display: inline-block;
+    background-color: #FFAB07;
+    border-radius: 20px;
+    font-size: 1rem;
+    padding: 5px 20px; /* Adjusted padding */
+}
+
+.kedai .dropdown-menu,
+.kedai-dropdown .dropdown-menu {
+    background-color: #FFAB07;
+    border-radius: 30px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.kedai .dropdown-item,
+.kedai-dropdown .dropdown-item {
+    color: #FFF !important;
+    padding: 10px;
+}
+
+.kedai .kategori-text {
+    background-color: #FFAB07;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: #FFF;
+}
+
+.kedai .dropdown-toggle::after,
+.kedai-dropdown .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+/* Specific styles for kedai-dropdown */
+.kedai-dropdown .dropdown-toggle:hover {
+    background-color: #F1C40F;
+}
+
+.kedai-dropdown .dropdown-menu {
+    padding: 10px 0px; /* Added padding to dropdown menu */
+}
+
+.kedai .search-input {
+  width: 950px; /* Panjang yang diinginkan untuk search bar */
+  
+}
+
+.kedai .spacer {
+  height: 50px; /* Atur sesuai kebutuhan */
+}
+
+.kedai .navbar {
+  margin-bottom: 50px; /* Atur sesuai kebutuhan */
+}
+
+
 /*** Kedai End ***/
 
 /*** Taman Start ***/
@@ -661,6 +733,146 @@ button:hover {
 
 /*** Museum End ***/
 
+/*** jakarta aquarium Start ***/
+
+
+.aquarium .container-fluid {
+  background-color: white;
+  padding: 5rem 0;
+}
+.aquarium {
+  padding: 5rem 0;
+}
+
+.aquarium .photos img {
+  margin: 0 0.50%;
+}
+
+.aquarium .aquarium-teks {
+  font-weight: bold;
+  font-size: 31px;
+  color: black;
+  margin-top: 20px; /* Ubah nilai sesuai kebutuhan jarak yang diinginkan */
+  display: inline-block;
+  vertical-align: top;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+
+.aquarium .aquarium-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.aquarium .aquarium-item .aquarium-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.5s;
+}
+
+
+.aquarium .aquarium-item .aquarium-link a {
+  color: var(--bs-white);
+  transition: 0.5s;
+}
+
+.aquarium .aquarium-item img {
+  transition: 0.5s;
+}
+
+.aquarium .aquarium-item .aquarium-link:hover a:hover {
+  color: #ffab07;
+}
+
+.aquarium .search {
+  width: 750px; /* Panjang yang diinginkan untuk search bar */
+  
+  
+}
+
+
+/*** jakarta aquarium End ***/
+
+/*** Information Event ***/
+
+.information-event .information-card {
+    background-color: #FFAB07;
+}
+
+.informationevent-content-inner {
+    background-color: #ffffff;
+    border: 1px solid #007bff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.informationevent-content {
+    flex: 2;
+    margin-left: 20px;
+}
+
+.informationevent-icon-container img {
+    width: 100%; /* Gambar mengisi seluruh area */
+    height: 100%;
+    object-fit: cover;
+}
+
+.informationevent .fixed-size {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-title {
+    font-size: 16px;
+    margin-bottom: 0; /* Menghilangkan jarak bawah */
+}
+
+.event-location {
+    flex-shrink: 0;
+    text-align: right;
+    margin-left: auto; /* Ensure the location text is at the far right */
+    align-self: flex-start; /* Align to the top */
+}
+
+.informationevent .search-input {
+  width: 850px; /* Panjang yang diinginkan untuk search bar */
+  
+}
+
+.informationevent .heart-icon-container {
+  position: absolute;
+  top: 10px; /* Sesuaikan posisi vertikal ikon love */
+  left: 30px; /* Sesuaikan posisi horizontal ikon love */
+  z-index: 1; /* Pastikan ikon love berada di atas gambar */
+}
+
+.informationevent .heart-icon {
+  color: red; /* Warna awal ikon love */
+  cursor: pointer; /* Ubah kursor menjadi pointer saat dihover */
+  font-size: 30px; /* Sesuaikan ukuran ikon love */
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; /* Tambahkan stroke berwarna putih */
+}
+
+.informationevent .heart-icon:hover {
+  color: white; /* Ubah warna ikon saat dihover */
+}
+
+/*** Information Event ***/
+
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
   background: linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)), url(../img/breadcrumb-bg.jpg);
@@ -675,6 +887,7 @@ button:hover {
   color: var(--bs-secondary) !important;
 }
 /*** Single Page Hero Header End ***/
+
 
 /*** About Start ***/
 .about .container .section-about-title {
@@ -812,6 +1025,229 @@ button:hover {
 
 /* Kategori End */
 
+/* Wishlist Start */ 
+
+
+.wishlist .navbar-light {
+  background-color: var(--bs-whie); /* Warna latar belakang navbar */
+}
+
+.wishlist .sticky-top.navbar-light {
+  background-color: var(--bs-white) /* Warna latar belakang navbar ketika menempel */
+}
+
+.wishlist .navbar-light .navbar-nav .nav-link {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  padding: 35px 15px;
+  color: var(--bs-black) !important;
+  font-size: 17px;
+  font-weight: 400;
+  outline: none;
+  transition: 0.5s;
+}
+
+.wishlist .sticky-top.navbar-light .navbar-nav .nav-link {
+  padding: 20px 15px;
+  color: var(--bs-dark) !important;
+}
+
+.wishlist .navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--bs-white) !important;
+}
+
+.wishlist .navbar-light .navbar-nav .nav-link:hover::before,
+.navbar-light .navbar-nav .nav-link.active::before {
+  background-color: #ffab07 !important;
+}
+
+.wishlist .navbar-light .navbar-brand h1 {
+  color: var(--bs-black);
+}
+
+.wishlist .sticky-top.navbar-light .navbar-brand h1 {
+  color: var(--bs-#000000);
+}
+
+.wishlist .navbar-light .navbar-brand img {
+  max-height: 60px;
+  transition: 0.5s;
+}
+
+.wishlist .sticky-top.navbar-light .navbar-brand img {
+  max-height: 45px;
+}
+
+.wishlist .navbar .dropdown-toggle::after {
+  border: none;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+@media (min-width: 1200px) {
+  .wishlist .navbar .nav-item .dropdown-menu {
+    display: block;
+    visibility: hidden;
+    top: 100%;
+    transform: rotateX(-75deg);
+    transform-origin: 0% 0%;
+    border: 0;
+    border-radius: 10px;
+    transition: 0.5s;
+    opacity: 0;
+  }
+}
+
+.wishlist .dropdown .dropdown-menu a:hover {
+  background: var(--bs-primary);
+  color: var(--bs-white);
+}
+
+.wishlist .navbar .nav-item:hover .dropdown-menu {
+  transform: rotateX(0deg);
+  visibility: visible;
+  background: var(--bs-light);
+  transition: 0.5s;
+  opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+  .wishlist .sticky-top.navbar-light {
+    position: relative;
+    background: var(--bs-white);
+  }
+
+  .wishlist .navbar-light .navbar-brand h1 {
+    color: var(--bs-primary);
+  }
+
+  .wishlist .navbar.navbar-expand-lg .navbar-toggler {
+    padding: 10px 20px;
+    border: 1px solid var(--bs-primary);
+    color: var(--bs-primary);
+  }
+
+  .wishlist .navbar-light .navbar-collapse {
+    margin-top: 15px;
+    border-top: 1px solid #c4c4c4;
+  }
+
+  .wishlist .navbar-light .navbar-nav .nav-link,
+  .sticky-top.navbar-light .navbar-nav .nav-link {
+    padding: 10px 0;
+    color: var(--bs-dark) !important;
+  }
+
+  .wishlist .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link.active {
+    color: var(--bs-primary) !important;
+  }
+
+  .wishlist .navbar-light .navbar-brand img {
+    max-height: 45px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wishlist .navbar-light {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 999;
+  }
+
+  .wishlist .sticky-top.navbar-light {
+    position: fixed;
+    background: var(--bs-light);
+  }
+
+  .wishlist .navbar-light .navbar-nav .nav-link::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: -1px;
+    left: 0;
+    background: var(--bs-primary);
+    transition: 0.5s;
+    z-index: -1;
+  }
+
+  .wishlist .navbar-light .navbar-nav .nav-link:hover::before,
+  .navbar-light .navbar-nav .nav-link.active::before {
+    height: calc(100% + 1px);
+    left: 1px;
+  }
+
+  .wishlist.navbar-light .navbar-nav .nav-link.nav-contact::before {
+    display: none;
+  }
+}
+
+
+.wishlist .search-input {
+  width: 900px; /* Panjang yang diinginkan untuk search bar */
+  
+}
+
+
+/* CSS untuk merapikan tampilan service-content-inner */
+.wishlist-content-inner {
+  background-color: #ffffff;
+  border: 1px solid #007bff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.wishlist-icon {
+  width: 250px; /* Lebar gambar */
+  height: auto; /* Biarkan tinggi mengikuti proporsi gambar */
+  background-color: #f8f9fa;
+  border-radius: 12px; /* Sudut bulat */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px; /* Jarak dari konten sebelah kanan */
+}
+
+.wishlist-icon img {
+  width: 100%; /* Gambar mengisi seluruh area */
+  height: 100%;
+  object-fit: cover;
+}
+
+.wishlist-content {
+  flex-grow: 1; /* Konten mengisi sisa area yang tersedia */
+}
+
+
+.rating {
+  color: #ffab07; /* Warna bintang */
+  font-size: 24px; /* Ukuran bintang */
+}
+
+.rating span {
+  display: inline-block;
+  width: 1em;
+  overflow: hidden;
+}
+
+.rating .material-symbols-outlined {
+  font-family: 'Material Icons Outlined';
+  font-size: inherit;
+  vertical-align: middle;
+}
+
+/* Wishlist End */ 
+
 /*** guide Start ***/
 .guide .guide-item .guide-img {
   position: relative;
@@ -884,6 +1320,8 @@ button:hover {
 }
 
 /*** guide End ***/
+
+
 
 /*** Destination Start ***/
 .destination .tab-class .tab-content .tab-pane .destination-img {
