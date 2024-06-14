@@ -873,6 +873,114 @@ button:hover {
 
 /*** Information Event ***/
 
+/** ulasan start **/
+.ulasan .rating-ulasan {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ffab07;
+  color: white;
+  border-radius: 15px;
+  padding: 15px 10px;
+  justify-content: space-between;
+}
+.ulasan .rating-ulasan h5 {
+  margin: 0;
+  margin-right: 5px;
+  color: white; /* Warna teks rating putih */
+}
+.ulasan .fa-star {
+  color: white; /* Warna bintang putih */
+  margin-right: 2px;
+}
+
+/** ulasan finish **/
+
+/** Detail ulasan start **/
+
+.detailulasan-esteh {
+  background-color: #FFC700;
+  border-radius: 15px;
+  padding: 10px 60px;
+}
+
+.detailulasan-esteh .detail-ulasan h5 {
+  color: #fff;
+  padding: 5px;
+  margin: 0;
+}
+
+.detailulasan-esteh .gambar-ulasan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detailulasan-esteh .gambar-ulasan img {
+  width: 7%;
+  height: auto;
+}
+
+.detailulasan-esteh .search-bar {
+  margin-left: 30px;
+  flex-grow: 1;
+}
+
+.detailulasan-esteh .form-control {
+  border-radius: 50px;
+  background-color: #FFC700;
+  border: 2px solid #ffffff;
+  width: 100%;
+}
+
+.detailulasan-esteh .ulasan-btn {
+  background-color: #FFAB07; 
+  border-color: #FFAB07;
+  border-radius: 10px;
+  white-space: nowrap;
+  margin-left: 15px;
+}
+
+.detailulasan-esteh .ulasan-btn i {
+  margin-right: 8px;
+}
+
+/* Tambahkan gaya untuk profil dan komentar */
+.detailulasan-esteh .profil-komentar {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.detailulasan-esteh .profil-komentar .profil img,
+.profil-komentar .komentar img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.detailulasan-esteh .profil-komentar .profil span {
+  font-weight: bold;
+}
+
+.detailulasan-esteh .profil-komentar .komentar p {
+  margin: 0;
+}
+
+.detailulasan-esteh .profil-komentar .komentar .text-warning {
+  margin-bottom: 10px; /* Margin bawah untuk jarak dengan tombol "Balas" */
+}
+
+.detailulasan-esteh .profil-komentar .btn-primary {
+  border-radius: 20px; /* Rounded pada tombol "Balas" */
+}
+
+
+
+/** Detail ulasan end **/
+
+
+
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
   background: linear-gradient(rgba(19, 53, 123, 0.5), rgba(19, 53, 123, 0.5)), url(../img/breadcrumb-bg.jpg);
